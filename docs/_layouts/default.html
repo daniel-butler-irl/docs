@@ -6,50 +6,11 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     {% seo %}
-    <style>
-        .wrapper {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 40px;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-        .social-links {
-            margin-top: 20px;
-        }
-        .social-links a {
-            margin-right: 15px;
-            text-decoration: none;
-        }
-        .project-card {
-            border: 1px solid #e1e4e8;
-            border-radius: 6px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .navigation {
-            margin-bottom: 30px;
-        }
-        .navigation a {
-            margin-right: 20px;
-            text-decoration: none;
-            color: #0366d6;
-        }
-    </style>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Daniel Butler" class="profile-img">
+            <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Daniel Butler" class="profile-img" onerror="this.src='https://via.placeholder.com/150'">
             <div>
                 <h1>{{ site.title }}</h1>
                 <p>{{ site.description }}</p>
@@ -59,12 +20,6 @@
                 </div>
             </div>
         </header>
-
-        <nav class="navigation">
-            {% for item in site.navigation %}
-            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-            {% endfor %}
-        </nav>
 
         <main>
             {{ content }}
