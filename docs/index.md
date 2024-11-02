@@ -1,18 +1,46 @@
 ---
-layout: default
+layout: home
 title: Home
+nav_order: 1
+permalink: /
 ---
 
-# About Me
+# Daniel Butler
+{: .fs-9 }
 
-I'm Daniel Butler, a Software Engineer at IBM Cloud with over a decade of experience in automation and cloud technologies. My passion lies in streamlining development processes and creating tools that make developers' lives easier.
+Automation Engineer at IBM Cloud | Making Cloud Development Easier
+{: .fs-6 .fw-300 }
+
+[View My Projects](./projects){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[View on GitHub](https://github.com/daniel-butler-irl){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+---
+
+## About Me
+
+I'm a Software Engineer at IBM Cloud with over a decade of experience in automation and cloud technologies. My passion lies in streamlining development processes and creating tools that make developers' lives easier.
 
 ## Expertise
 
-- **Cloud Architecture**: Extensive experience with IBM Cloud infrastructure and services
-- **Automation**: Designing and implementing automated solutions for complex workflows
-- **Tool Development**: Creating developer tools and extensions to enhance productivity
-- **DevOps**: Implementing CI/CD pipelines and maintaining development infrastructure
+{: .highlight }
+> **Cloud Architecture**
+> 
+> Extensive experience with IBM Cloud infrastructure and services
+
+{: .highlight }
+> **Automation**
+> 
+> Designing and implementing automated solutions for complex workflows
+
+{: .highlight }
+> **Tool Development**
+> 
+> Creating developer tools and extensions to enhance productivity
+
+{: .highlight }
+> **DevOps**
+> 
+> Implementing CI/CD pipelines and maintaining development infrastructure
 
 ## Professional Experience
 

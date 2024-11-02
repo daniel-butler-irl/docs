@@ -4,24 +4,18 @@ url: "https://dbdev.ie"
 baseurl: ""
 
 # Theme settings
-remote_theme: just-the-docs/just-the-docs
-
-# Color scheme
+remote_theme: just-the-docs/just-the-docs@v0.7.0
 color_scheme: dark
 
 # Enable or disable heading anchors
 heading_anchors: true
 
 # Footer content
-footer_content: "Copyright &copy; 2024 Daniel Butler. Distributed by an MIT license."
+footer_content: "Copyright &copy; 2024 Daniel Butler."
 
 # Enable or disable back to top button
 back_to_top: true
 back_to_top_text: "Back to top"
-
-# Google Analytics
-ga_tracking: UA-XXXXXXXXX-X
-ga_tracking_anonymize_ip: true
 
 # Collections
 collections:
@@ -59,8 +53,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  
+  - vendor
