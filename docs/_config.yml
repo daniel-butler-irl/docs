@@ -1,0 +1,32 @@
+title: Daniel Butler
+description: Automation Engineer at IBM Cloud | Making Cloud Development Easier
+url: "https://dbdev.ie"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+# Author information
+author:
+  name: Daniel Butler
+  email: daniel.butler.irl@gmail.com
+  github: daniel-butler-irl
+  linkedin: daniel-butler-1a525832
+
+# Navigation
+navigation:
+  - title: About
+    url: /
+  - title: Projects
+    url: /projects
+  - title: Blog
+    url: /blog
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
