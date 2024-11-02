@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: default
 title: Projects
 nav_order: 2
-has_children: false
-permalink: /projects
+permalink: /projects/
 ---
 
 # Projects

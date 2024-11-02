@@ -1,10 +1,12 @@
 title: Daniel Butler
 description: Automation Engineer at IBM Cloud | Making Cloud Development Easier
 url: "https://dbdev.ie"
-baseurl: ""
+baseurl: "/docs" # Changed this to match the repository name
 
 # Theme settings
 remote_theme: just-the-docs/just-the-docs@v0.7.0
+
+# Color scheme
 color_scheme: dark
 
 # Enable or disable heading anchors
@@ -16,12 +18,6 @@ footer_content: "Copyright &copy; 2024 Daniel Butler."
 # Enable or disable back to top button
 back_to_top: true
 back_to_top_text: "Back to top"
-
-# Collections
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
 
 # Search
 search_enabled: true
@@ -37,20 +33,52 @@ search:
 # Aux links for the upper right navigation
 aux_links:
   "VS Code IBM Catalog Editor":
-    - "https://github.com/daniel-butler-irl/VS_Code_Catalog_Json_Editor"
+    - "//github.com/daniel-butler-irl/VS_Code_Catalog_Json_Editor"
   "GitHub Profile":
-    - "https://github.com/daniel-butler-irl"
+    - "//github.com/daniel-butler-irl"
 
 # Makes Aux links open in a new tab
 aux_links_new_tab: true
 
+# Enable plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-remote-theme
+  - jekyll-feed
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Just the Docs specific settings
+nav_external_links:
+  - title: VS Code IBM Catalog Editor on GitHub
+    url: https://github.com/daniel-butler-irl/VS_Code_Catalog_Json_Editor
+    hide_icon: false
 
 # Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor
+  - vendor/
+  - README.md
+  - .jekyll-cache/

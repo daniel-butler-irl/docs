@@ -1,7 +1,8 @@
 ---
-layout: home
+layout: default
 title: Home
 nav_order: 1
+description: "Daniel Butler - Automation Engineer at IBM Cloud"
 permalink: /
 ---
 
@@ -11,7 +12,7 @@ permalink: /
 Automation Engineer at IBM Cloud | Making Cloud Development Easier
 {: .fs-6 .fw-300 }
 
-[View My Projects](./projects){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[View Projects]({{ site.baseurl }}/projects/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [View on GitHub](https://github.com/daniel-butler-irl){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
@@ -20,34 +21,15 @@ Automation Engineer at IBM Cloud | Making Cloud Development Easier
 
 I'm a Software Engineer at IBM Cloud with over a decade of experience in automation and cloud technologies. My passion lies in streamlining development processes and creating tools that make developers' lives easier.
 
+{: .highlight }
+> With over 10 years at IBM Cloud, I focus on creating efficient workflows and tools that help developers and architects work more effectively with IBM Cloud services.
+
 ## Expertise
 
-{: .highlight }
-> **Cloud Architecture**
-> 
-> Extensive experience with IBM Cloud infrastructure and services
-
-{: .highlight }
-> **Automation**
-> 
-> Designing and implementing automated solutions for complex workflows
-
-{: .highlight }
-> **Tool Development**
-> 
-> Creating developer tools and extensions to enhance productivity
-
-{: .highlight }
-> **DevOps**
-> 
-> Implementing CI/CD pipelines and maintaining development infrastructure
-
-## Professional Experience
-
-### IBM Cloud - Software Engineer
-*Over 10 years of experience*
-
-Working on automation solutions and developer tools to improve the IBM Cloud ecosystem. My focus is on creating efficient workflows and tools that help developers and architects work more effectively with IBM Cloud services.
+* **Cloud Architecture**: Extensive experience with IBM Cloud infrastructure and services
+* **Automation**: Designing and implementing automated solutions for complex workflows
+* **Tool Development**: Creating developer tools and extensions to enhance productivity
+* **DevOps**: Implementing CI/CD pipelines and maintaining development infrastructure
 
 ## Current Focus
 

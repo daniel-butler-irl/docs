@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: default
 title: Blog
 nav_order: 3
-has_children: true
-permalink: /blog
+description: "Blog posts by Daniel Butler"
+permalink: /blog/
 ---
 
 # Blog Posts
@@ -19,7 +19,7 @@ Coming Soon
 
 A deep dive into best practices for managing IBM Cloud configurations at scale.
 
-[Read More](#){: .btn .btn-outline }
+[Read More]({{ site.baseurl }}/blog/coming-soon){: .btn .btn-outline }
 
 ### The Journey to Better Developer Tools
 {: .d-inline-block }
@@ -29,7 +29,7 @@ Coming Soon
 
 Exploring the motivation and development process behind the VS Code IBM Catalog JSON Editor.
 
-[Read More](#){: .btn .btn-outline }
+[Read More]({{ site.baseurl }}/blog/coming-soon){: .btn .btn-outline }
 
 ---
 
@@ -40,4 +40,4 @@ Exploring the motivation and development process behind the VS Code IBM Catalog 
 >
 > Subscribe to receive notifications about new blog posts and updates.
 >
-> [Subscribe via RSS](/feed.xml){: .btn .btn-outline }
+> [Subscribe via RSS]({{ site.baseurl }}/feed.xml){: .btn .btn-outline }
