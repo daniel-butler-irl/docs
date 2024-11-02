@@ -1,27 +1,58 @@
 title: Daniel Butler
 description: Automation Engineer at IBM Cloud | Making Cloud Development Easier
-baseurl: "/docs"
-url: "https://daniel-butler-irl.github.io"
+url: "https://dbdev.ie"
+baseurl: ""
 
 # Theme settings
-remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: just-the-docs/just-the-docs
+
+# Color scheme
+color_scheme: dark
+
+# Enable or disable heading anchors
+heading_anchors: true
+
+# Footer content
+footer_content: "Copyright &copy; 2024 Daniel Butler. Distributed by an MIT license."
+
+# Enable or disable back to top button
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Google Analytics
+ga_tracking: UA-XXXXXXXXX-X
+ga_tracking_anonymize_ip: true
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Search
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: true
+
+# Aux links for the upper right navigation
+aux_links:
+  "VS Code IBM Catalog Editor":
+    - "https://github.com/daniel-butler-irl/VS_Code_Catalog_Json_Editor"
+  "GitHub Profile":
+    - "https://github.com/daniel-butler-irl"
+
+# Makes Aux links open in a new tab
+aux_links_new_tab: true
+
 plugins:
-  - jekyll-remote-theme
-  - jekyll-feed
   - jekyll-seo-tag
-
-# Author information
-author:
-  name: Daniel Butler
-  email: daniel.butler.irl@gmail.com
-  github: daniel-butler-irl
-  linkedin: daniel-butler-1a525832
-
-# Build settings
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+  - jekyll-remote-theme
 
 # Exclude from processing
 exclude:
@@ -32,3 +63,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  
