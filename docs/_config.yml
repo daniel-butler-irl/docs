@@ -3,11 +3,10 @@ description: Automation Engineer at IBM Cloud | Making Cloud Development Easier
 url: "https://dbdev.ie"
 baseurl: ""
 
-# Build settings
-markdown: kramdown
-remote_theme: pages-themes/minimal@v0.2.0
+# Theme settings
+theme: minima
 plugins:
-  - jekyll-remote-theme
+  - jekyll-feed
   - jekyll-seo-tag
 
 # Author information
@@ -17,16 +16,36 @@ author:
   github: daniel-butler-irl
   linkedin: daniel-butler-1a525832
 
-# Navigation
-navigation:
-  - title: About
-    url: /
-  - title: Projects
-    url: /projects
-  - title: Blog
-    url: /blog
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 
+# Collections
 collections:
   projects:
     output: true
     permalink: /projects/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
